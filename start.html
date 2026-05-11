@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Start Here | Science-Based Lifting</title>
+  <meta name="description" content="Take a 90-second quiz to get a personalized learning plan for evidence-based lifting.">
+  <meta name="theme-color" content="#101513">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Science-Based Lifting Directory home">
+      <span class="brand-mark" aria-hidden="true">SBL</span>
+      <span>Science-Based Lifting</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a class="is-active" href="start.html">Start Here</a>
+      <a href="directory.html">Directory</a>
+      <a href="learn.html">Learn</a>
+      <a href="debates.html">Debates</a>
+      <a href="noise.html">Noise</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <p class="eyebrow">Start here</p>
+      <h1>Figure out what to learn next.</h1>
+      <p>Six questions, ninety seconds. You get a personalized learning plan with the three creators who matter most for where you are right now — and a clear list of who to skip.</p>
+    </section>
+
+    <section class="quiz-section section-band">
+      <div id="quiz-container">
+        <div class="quiz-progress" id="quiz-progress">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <div class="quiz-card active" data-q="1">
+          <p class="quiz-question">How long have you been seriously training?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" data-value="0">Never or under 6 months</button>
+            <button class="quiz-option" data-value="1">6 to 18 months</button>
+            <button class="quiz-option" data-value="2">1.5 to 3 years</button>
+            <button class="quiz-option" data-value="3">3+ years and still progressing</button>
+          </div>
+        </div>
+
+        <div class="quiz-card" data-q="2">
+          <p class="quiz-question">What is your primary goal right now?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" data-value="hypertrophy">Build muscle / look better</button>
+            <button class="quiz-option" data-value="strength">Get stronger on big lifts</button>
+            <button class="quiz-option" data-value="sport">Support a sport (BJJ, MMA, etc.)</button>
+            <button class="quiz-option" data-value="general">General health and being capable</button>
+          </div>
+        </div>
+
+        <div class="quiz-card" data-q="3">
+          <p class="quiz-question">Honestly, what has been holding back your progress most?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" data-value="programming">I do not know how to program or I keep changing splits</button>
+            <button class="quiz-option" data-value="execution">My exercises do not feel right or I cannot connect to muscles</button>
+            <button class="quiz-option" data-value="nutrition">Eating, cutting, bulking, staying lean</button>
+            <button class="quiz-option" data-value="recovery">Sleep, fatigue, life stress, joint stuff</button>
+            <button class="quiz-option" data-value="none">Honestly I am doing fine, I just want to learn more</button>
+          </div>
+        </div>
+
+        <div class="quiz-card" data-q="4">
+          <p class="quiz-question">How do you actually consume training content?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" data-value="short_form">Quick TikTok and Instagram clips</button>
+            <button class="quiz-option" data-value="long_form">Long YouTube videos and podcasts</button>
+            <button class="quiz-option" data-value="reading">Articles, research summaries, books</button>
+            <button class="quiz-option" data-value="mixed">Mix of everything</button>
+          </div>
+        </div>
+
+        <div class="quiz-card" data-q="5">
+          <p class="quiz-question">How deep do you want to go?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" data-value="low">Just tell me what to do</button>
+            <button class="quiz-option" data-value="medium">I want to understand the why behind decisions</button>
+            <button class="quiz-option" data-value="high">I want the actual physiology and research-level reasoning</button>
+          </div>
+        </div>
+
+        <div class="quiz-card quiz-multi" data-q="6">
+          <p class="quiz-question">Are any of these specifically true? (Pick all that apply)</p>
+          <div class="quiz-options">
+            <button class="quiz-option" data-value="natural">I am a natural lifter and I want natural-relevant advice</button>
+            <button class="quiz-option" data-value="overwhelmed">I am a beginner and I am overwhelmed</button>
+            <button class="quiz-option" data-value="prep">I am preparing for a contest or photoshoot</button>
+            <button class="quiz-option" data-value="counterpoint">I want to push back on the high-volume orthodoxy</button>
+            <button class="quiz-option" data-value="none">None of these</button>
+          </div>
+          <div class="quiz-nav">
+            <span></span>
+            <button class="button button-primary" id="quiz-submit">See my plan</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-result" id="quiz-result">
+        <div class="result-section">
+          <h2>Your learning plan</h2>
+          <p id="result-summary" style="color:var(--muted);max-width:640px;margin:12px 0 28px;"></p>
+        </div>
+
+        <div class="rtf-callout">
+          <h2>Read this first</h2>
+          <ul>
+            <li>Train each muscle 2x per week with most sets within a few reps of failure.</li>
+            <li>Eat enough protein (1.6 to 2.2 g/kg body weight) and prioritize sleep.</li>
+            <li>Progress over months, not weeks. Consistency beats optimization.</li>
+            <li>Everything else on this site is nuance on top of these fundamentals.</li>
+          </ul>
+        </div>
+
+        <div class="result-section">
+          <h3>Your three primary teachers</h3>
+          <div id="result-creators"></div>
+        </div>
+
+        <div class="result-section">
+          <h3>Skip these for now</h3>
+          <ul class="skip-list" id="result-skip"></ul>
+        </div>
+
+        <div class="result-section">
+          <h3>When you are ready for the next level</h3>
+          <p id="result-next" style="color:var(--muted);"></p>
+        </div>
+
+        <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;">
+          <a class="button button-primary" href="directory.html">Browse all creators</a>
+          <a class="button button-secondary" href="learn.html">Explore learning paths</a>
+          <button class="button button-secondary" onclick="resetQuiz()">Retake quiz</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Science-Based Lifting Directory.</p>
+    <a href="about.html">About this site</a>
+  </footer>
+
+  <script>
+  (function() {
+    var answers = {};
+    var cards = document.querySelectorAll('.quiz-card');
+    var progress = document.querySelectorAll('.quiz-progress span');
+    var resultEl = document.getElementById('quiz-result');
+    var container = document.getElementById('quiz-container');
+
+    cards.forEach(function(card) {
+      var q = card.dataset.q;
+      var isMulti = card.classList.contains('quiz-multi');
+      card.querySelectorAll('.quiz-option').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          if (isMulti) {
+            if (btn.dataset.value === 'none') {
+              card.querySelectorAll('.quiz-option').forEach(function(b) { b.classList.remove('selected'); });
+              btn.classList.add('selected');
+              answers[q] = ['none'];
+            } else {
+              var noneBtn = card.querySelector('[data-value="none"]');
+              if (noneBtn) noneBtn.classList.remove('selected');
+              btn.classList.toggle('selected');
+              answers[q] = Array.from(card.querySelectorAll('.quiz-option.selected')).map(function(b) { return b.dataset.value; });
+            }
+          } else {
+            card.querySelectorAll('.quiz-option').forEach(function(b) { b.classList.remove('selected'); });
+            btn.classList.add('selected');
+            answers[q] = btn.dataset.value;
+            setTimeout(function() { goTo(parseInt(q) + 1); }, 300);
+          }
+        });
+      });
+    });
+
+    function goTo(n) {
+      if (n > 6) return;
+      cards.forEach(function(c) { c.classList.remove('active'); });
+      document.querySelector('[data-q="' + n + '"]').classList.add('active');
+      progress.forEach(function(s, i) { s.classList.toggle('done', i < n); });
+    }
+
+    document.getElementById('quiz-submit').addEventListener('click', function() {
+      if (!answers['1'] || !answers['2'] || !answers['3'] || !answers['4'] || !answers['5']) {
+        alert('Please answer all questions first.');
+        return;
+      }
+      if (!answers['6']) answers['6'] = ['none'];
+      showResult();
+    });
+
+    function showResult() {
+      var level = parseInt(answers['1']);
+      var goal = answers['2'];
+      var bottleneck = answers['3'];
+      var style = answers['4'];
+      var depth = answers['5'];
+      var flags = answers['6'] || ['none'];
+      var stage = level;
+      var stageNames = ['Pre-Foundations', 'Foundations', 'Intermediate Application', 'Advanced Nuance'];
+
+      var creators = {
+        nippard: { name: 'Jeff Nippard', domain: 'foundations', level: [0,1,2], depth: ['low','medium'], style: ['long_form','mixed'], why: 'The best single entry point to evidence-based lifting. Polished research summaries with practical programming.', link: 'directory.html#exercise-science' },
+        tnf: { name: 'Joel Twinem (TNF)', domain: 'programming', level: [1,2], depth: ['medium','high'], style: ['short_form','long_form','mixed'], why: 'Calibrates expectations and debunks optimization theater. Sustainable framework for natural lifters.', link: 'directory.html#exercise-science' },
+        bennett: { name: 'Joe Bennett', domain: 'execution', level: [2,3], depth: ['medium'], style: ['long_form','mixed'], why: 'The execution master. If your exercises do not feel right, he fixes that.', link: 'directory.html#exercise-science' },
+        kassem: { name: 'Kassem Hanson', domain: 'biomechanics', level: [2,3], depth: ['high'], style: ['long_form','reading'], why: 'Deep individualized biomechanics for serious learners and aspiring coaches.', link: 'directory.html#exercise-science' },
+        snitch: { name: 'Scientific Snitch', domain: 'nutrition', level: [0,1], depth: ['low','medium'], style: ['short_form','mixed'], why: 'Accessible, accurate nutrition fundamentals for lifters.', link: 'directory.html#nutrition' },
+        jewett: { name: 'John Jewett', domain: 'nutrition', level: [2,3], depth: ['high'], style: ['long_form','reading'], why: 'IFBB Pro and registered dietitian. Real RD-level nutrition for prep and serious dieting.', link: 'directory.html#nutrition' },
+        malloy: { name: 'Keenan Malloy', domain: 'programming', level: [0,1], depth: ['low','medium'], style: ['short_form','mixed'], why: 'Full-body programming for beginners. The best first split decision.', link: 'directory.html#beginners' },
+        jewers: { name: 'Ryan Jewers', domain: 'programming', level: [0,1,2], depth: ['medium'], style: ['short_form','mixed'], why: 'Programming literacy: how to structure volume, frequency, and pick a defensible split.', link: 'directory.html#exercise-science' },
+        milo: { name: 'Milo Wolf, PhD', domain: 'biomechanics', level: [2,3], depth: ['high'], style: ['long_form','reading'], why: 'The leading voice on ROM, lengthened partials, and muscle-length research.', link: 'directory.html#exercise-science' },
+        carter: { name: 'Paul Carter', domain: 'programming', level: [2,3], depth: ['medium','high'], style: ['long_form','reading'], why: 'The credible counter-argument to high-volume orthodoxy. Intensity-first training.', link: 'directory.html#exercise-science' },
+        roman: { name: 'Roman Mori', domain: 'sport', level: [1,2], depth: ['medium'], style: ['short_form','mixed'], why: 'The only evidence-based strength coach specifically for combat sports.', link: 'directory.html#athletes' },
+        yanes: { name: 'Ben Yanes', domain: 'execution', level: [1,2], depth: ['medium'], style: ['long_form','mixed'], why: 'Practical biomechanics without jargon overload. Bridges science and the gym floor.', link: 'directory.html#exercise-science' },
+        deltoids: { name: 'King Deltoids', domain: 'execution', level: [1,2], depth: ['medium'], style: ['short_form'], why: 'Shoulder hypertrophy specialist. Biomechanically-justified delt exercise picks.', link: 'directory.html#beginners' },
+        diley: { name: 'Davis Diley', domain: 'execution', level: [1,2], depth: ['low','medium'], style: ['short_form','long_form'], why: 'Calm, practical content around intense but recoverable training.', link: 'directory.html#beginners' },
+        israetel: { name: 'Mike Israetel (RP)', domain: 'programming', level: [1,2,3], depth: ['medium','high'], style: ['long_form','mixed'], why: 'Volume landmarks, periodization, and the most systematic hypertrophy framework available.', link: 'directory.html#exercise-science' },
+        nuckols: { name: 'Greg Nuckols', domain: 'programming', level: [1,2,3], depth: ['high'], style: ['long_form','reading'], why: 'The deepest programming mind in the space. Stronger By Science is the gold standard for research-informed training.', link: 'directory.html#exercise-science' },
+        helms: { name: 'Eric Helms (3DMJ)', domain: 'foundations', level: [1,2,3], depth: ['high'], style: ['long_form','reading'], why: 'The complete natural bodybuilding education — training, nutrition, and contest prep grounded in published research.', link: 'directory.html#exercise-science' },
+        henselmans: { name: 'Menno Henselmans', domain: 'programming', level: [2,3], depth: ['high'], style: ['long_form','reading'], why: 'Evidence-based hypertrophy programming with a meta-analytical approach. Challenges conventional wisdom with data.', link: 'directory.html#exercise-science' },
+        mcmahon: { name: 'MuscleMechanicsLab', domain: 'biomechanics', level: [3], depth: ['high'], style: ['long_form','reading'], why: 'Advanced biomechanics and muscle architecture analysis for serious students and aspiring coaches.', link: 'directory.html#exercise-science' },
+        trexler: { name: 'Eric Trexler', domain: 'nutrition', level: [1,2,3], depth: ['high'], style: ['long_form','reading'], why: 'PhD-level nutrition science — energy availability, metabolic adaptation, and body composition research.', link: 'directory.html#nutrition' },
+        norton: { name: 'Layne Norton', domain: 'nutrition', level: [1,2,3], depth: ['high'], style: ['long_form','mixed'], why: 'PhD-level protein metabolism and flexible dieting science. Strong credentials, combative delivery.', link: 'directory.html#nutrition' },
+        samudio: { name: 'Juan Samudio', domain: 'execution', level: [1,2], depth: ['medium'], style: ['short_form','mixed'], why: 'The most detailed resistance-curve analysis for glute training. Engineering-grade exercise selection.', link: 'directory.html#athletes' },
+        dxklan: { name: 'Dxklan', domain: 'programming', level: [1,2], depth: ['medium'], style: ['short_form','mixed'], why: 'Powerbuilding simplified. Bridges powerlifting execution with hypertrophy goals.', link: 'directory.html#athletes' },
+        bankston: { name: 'Trell Bankston', domain: 'execution', level: [1,2], depth: ['medium'], style: ['short_form','mixed'], why: 'Old-school intensity and frequency for natural bodybuilding. A counterpoint to volume-heavy approaches.', link: 'directory.html#athletes' }
+      };
+
+      var primaryDomain = 'foundations';
+      if (bottleneck === 'programming') primaryDomain = 'programming';
+      else if (bottleneck === 'execution') primaryDomain = 'execution';
+      else if (bottleneck === 'nutrition') primaryDomain = 'nutrition';
+      else if (bottleneck === 'recovery') primaryDomain = 'programming';
+      else primaryDomain = stage <= 1 ? 'foundations' : 'programming';
+
+      var candidates = Object.values(creators).filter(function(c) {
+        if (c.level.indexOf(stage) === -1) return false;
+        if (goal === 'sport' && c.domain === 'sport') return true;
+        if (c.domain === primaryDomain) return true;
+        if (stage <= 1 && c.domain === 'foundations') return true;
+        return false;
+      });
+
+      candidates.sort(function(a, b) {
+        var aS = a.style.indexOf(style) !== -1 ? 1 : 0;
+        var bS = b.style.indexOf(style) !== -1 ? 1 : 0;
+        return bS - aS;
+      });
+
+      if (flags.indexOf('counterpoint') !== -1) candidates.unshift(creators.carter);
+      if (flags.indexOf('prep') !== -1) candidates.unshift(creators.jewett);
+      if (goal === 'sport') candidates.unshift(creators.roman);
+
+      var seen = {};
+      candidates = candidates.filter(function(c) {
+        if (seen[c.name]) return false;
+        seen[c.name] = true;
+        return true;
+      });
+
+      if (candidates.length < 3) {
+        var fallbacks = [creators.nippard, creators.tnf, creators.jewers, creators.snitch];
+        for (var i = 0; i < fallbacks.length; i++) {
+          if (!seen[fallbacks[i].name]) { candidates.push(fallbacks[i]); seen[fallbacks[i].name] = true; }
+          if (candidates.length >= 3) break;
+        }
+      }
+
+      var top3 = candidates.slice(0, 3);
+
+      var skipCreators = [];
+      if (stage <= 1) {
+        skipCreators.push({ name: 'Kassem Hanson', reason: 'Teaches individualized biomechanics for advanced lifters and coaches. Come back at year 2+.' });
+        skipCreators.push({ name: 'Milo Wolf (advanced content)', reason: 'His ROM and lengthened-partial research is powerful but assumes intermediate programming knowledge.' });
+        skipCreators.push({ name: 'Paul Carter', reason: 'His low-volume counter-argument is best appreciated after you understand the mainstream volume framework.' });
+        skipCreators.push({ name: 'Menno Henselmans', reason: 'Meta-analytical approach to hypertrophy programming. Best after you have 1-2 years of training context.' });
+        skipCreators.push({ name: 'MuscleMechanicsLab', reason: 'Advanced muscle architecture and biomechanics analysis. Requires strong foundational knowledge.' });
+        skipCreators.push({ name: 'Layne Norton', reason: 'PhD-level nutrition science. His content is best appreciated after you understand basic nutrition frameworks.' });
+      }
+      if (stage === 0) {
+        skipCreators.push({ name: 'Joe Bennett', reason: 'His execution coaching assumes you already have a program and basic movements locked in.' });
+        skipCreators.push({ name: 'Greg Nuckols', reason: 'Deep programming content — incredible but assumes you already have training experience to contextualize it.' });
+      }
+
+      document.getElementById('result-summary').textContent =
+        'You are at ' + stageNames[stage] + ' (Stage ' + stage + '). Your primary bottleneck is ' + (bottleneck === 'none' ? 'general learning' : bottleneck) + '. ' +
+        'Here is your personalized plan based on your ' + depth + '-depth, ' + style.replace('_',' ') + '-format preferences.';
+
+      document.getElementById('result-creators').innerHTML = top3.map(function(c) {
+        return '<div class="creator-rec"><p class="rec-reason">' + c.why + '</p><h4>' + c.name + '</h4><a href="' + c.link + '" class="where-to-start">Go to profile</a></div>';
+      }).join('');
+
+      document.getElementById('result-skip').innerHTML = skipCreators.length > 0
+        ? skipCreators.map(function(s) { return '<li><strong>' + s.name + '</strong> — ' + s.reason + '</li>'; }).join('')
+        : '<li>No exclusions for your level. Explore freely.</li>';
+
+      var nextStage = Math.min(stage + 1, 3);
+      document.getElementById('result-next').textContent = stage < 3
+        ? 'When you have been training ' + ['6+ months', '1.5+ years', '3+ years'][stage] + ', revisit the quiz or explore Stage ' + nextStage + ' (' + stageNames[nextStage] + ') creators in the learning paths.'
+        : 'You are at the advanced tier. Explore the debates page for the cutting-edge contested topics.';
+
+      container.style.display = 'none';
+      resultEl.classList.add('active');
+
+      var params = new URLSearchParams({ l: answers['1'], g: answers['2'], b: answers['3'], s: answers['4'], d: answers['5'], f: (answers['6'] || []).join(',') });
+      history.replaceState(null, '', '?' + params.toString());
+      localStorage.setItem('sbl-quiz', JSON.stringify(answers));
+    }
+
+    window.resetQuiz = function() {
+      answers = {};
+      cards.forEach(function(c) {
+        c.classList.remove('active');
+        c.querySelectorAll('.quiz-option').forEach(function(b) { b.classList.remove('selected'); });
+      });
+      cards[0].classList.add('active');
+      progress.forEach(function(s) { s.classList.remove('done'); });
+      container.style.display = '';
+      resultEl.classList.remove('active');
+      history.replaceState(null, '', 'start.html');
+      localStorage.removeItem('sbl-quiz');
+    };
+
+    var urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('l')) {
+      answers['1'] = urlParams.get('l');
+      answers['2'] = urlParams.get('g');
+      answers['3'] = urlParams.get('b');
+      answers['4'] = urlParams.get('s');
+      answers['5'] = urlParams.get('d');
+      answers['6'] = urlParams.get('f').split(',');
+      showResult();
+    }
+  })();
+  </script>
+</body>
+</html>
