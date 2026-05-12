@@ -520,10 +520,16 @@ details a {
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
 }
 
-.category-card:hover {
+a.category-card { cursor: pointer; }
+
+a.category-card:hover {
   transform: translateY(-3px);
   border-color: rgba(31, 143, 100, 0.4);
   box-shadow: 0 18px 40px rgba(16, 21, 19, 0.08);
+}
+
+div.category-card {
+  cursor: default;
 }
 
 .category-card h2,
