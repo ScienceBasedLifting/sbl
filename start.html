@@ -244,30 +244,264 @@
       ];
 
       var creators = {
-        nippard: { name: 'Jeff Nippard', domain: 'foundations', level: [0,1,2], depth: ['low','medium'], style: ['long_form','mixed'], why: 'BSc Biochemistry, natural pro bodybuilder. The single best starting point for evidence-based lifting — polished YouTube video essays with on-screen study citations covering beginner programs through research deep-dives.', link: 'directory.html#fundamentals' },
-        tnf: { name: 'Joel Twinem (TNF)', domain: 'programming', level: [1,2], depth: ['medium','high'], style: ['short_form','long_form','mixed'], why: 'Fitness coach who cuts through optimization theater. His framework: standardize technique, take hard sets near failure, let progressive overload do the work. Specifically calibrated for natural lifters.', link: 'directory.html#fundamentals' },
-        bennett: { name: 'Joe Bennett', domain: 'execution', level: [2,3], depth: ['medium'], style: ['long_form','mixed'], why: 'Coaches IFBB pros on exercise execution. Fixes the "this doesn\'t feel right" problem by putting muscles in the correct leverage position before you initiate failure. Was early on stretch emphasis before the research caught up.', link: 'directory.html#exercise-selection' },
-        kassem: { name: 'Kassem Hanson', domain: 'biomechanics', level: [2,3], depth: ['high'], style: ['long_form','reading'], why: 'Founded N1 Education. Teaches individualized exercise selection based on your specific skeletal anatomy — joint-angle analysis and exercise mapping. Primary audience is coaches, not beginners.', link: 'directory.html#deep-science' },
-        snitch: { name: 'Scientific Snitch', domain: 'nutrition', level: [0,1], depth: ['low','medium'], style: ['short_form','mixed'], why: 'Ella Parungao. Screen-shares PubMed studies to break down protein, energy balance, and why aggressive bulking backfires for natural lifters. Short-form, research-backed, no sponsor pitches.', link: 'directory.html#wellness' },
-        jewett: { name: 'John Jewett', domain: 'nutrition', level: [2,3], depth: ['high'], style: ['long_form','reading'], why: 'IFBB Pro bodybuilder who is also a Registered Dietitian with an MS in Nutrition. One of the few people who can coach contest prep with actual clinical credentials behind it.', link: 'directory.html#wellness' },
-        malloy: { name: 'Keenan Malloy', domain: 'programming', level: [0,1], depth: ['low','medium'], style: ['short_form','mixed'], why: 'Hypertrophy coach and Tracked app co-founder. Teaches full-body and FBEOD programming so you stop overthinking split selection and start training consistently.', link: 'directory.html#deep-science' },
-        jewers: { name: 'Ryan Jewers', domain: 'programming', level: [0,1,2], depth: ['medium'], style: ['short_form','mixed'], why: 'BSc Kinesiology candidate, NSCA-CPT. Teaches volume, frequency, and split design with anatomical overlays and machine demos. Mainstream evidence-based programming.', link: 'directory.html#fundamentals' },
-        milo: { name: 'Milo Wolf, PhD', domain: 'biomechanics', level: [2,3], depth: ['high'], style: ['long_form','reading'], why: 'PhD in sport science focused on partial vs. full ROM hypertrophy. Active researcher — publishes papers, not just summarizes them. Pro-lengthened-partials, but transparent about his position.', link: 'directory.html#deep-science' },
-        carter: { name: 'Paul Carter', domain: 'programming', level: [2,3], depth: ['medium','high'], style: ['long_form','reading'], why: 'Veteran coach who argues for 1–3 hard sets per muscle taken to true failure. The credible counterpoint to high-volume orthodoxy. Skeptical of stretch-mediated hypertrophy trends.', link: 'directory.html#fundamentals' },
-        roman: { name: 'Roman Mori', domain: 'sport', level: [1,2], depth: ['medium'], style: ['short_form','mixed'], why: 'Former U.S. Army Ranger, BJJ brown belt. Programs heavy compound lifts for fighters. His rule: the weight room builds raw force, the mat provides all the instability training you need.', link: 'directory.html#athletes' },
-        yanes: { name: 'Ben Yanes', domain: 'execution', level: [1,2], depth: ['medium'], style: ['long_form','mixed'], why: 'Uses whiteboard explanations and skeletal models to de-complicate resistance profiles and exercise selection. Practical biomechanics for coaches and serious lifters without jargon overload.', link: 'directory.html#exercise-selection' },
-        deltoids: { name: 'King Deltoids', domain: 'execution', level: [1,2], depth: ['medium'], style: ['short_form'], why: 'Evaluates delt exercises by torque profiles and fiber targeting — front, side, and rear — with stretch-biased, biomechanics-first selection. The shoulder specialist.', link: 'directory.html#exercise-selection' },
-        diley: { name: 'Davis Diley', domain: 'execution', level: [1,2], depth: ['low','medium'], style: ['short_form','long_form'], why: 'Demos cable execution for chest, back, and arms. Advocates brief, intense sessions over junk volume. Has discussed PED use openly — factor that into recovery comparisons.', link: 'directory.html#fundamentals' },
-        israetel: { name: 'Mike Israetel (RP)', domain: 'programming', level: [1,2,3], depth: ['medium','high'], style: ['long_form','mixed'], why: 'PhD in Sport Physiology, co-founder of Renaissance Periodization. Created the MEV/MAV/MRV volume-landmark model that dominates modern hypertrophy programming. Some content is intentionally provocative for engagement.', link: 'directory.html#exercise-selection' },
-        nuckols: { name: 'Greg Nuckols', domain: 'programming', level: [1,2,3], depth: ['high'], style: ['long_form','reading'], why: 'Founded Stronger By Science, co-created MASS Research Review. The most rigorous long-form writing on strength and hypertrophy programming available. Text-based — you read this, not watch it.', link: 'directory.html#exercise-selection' },
-        helms: { name: 'Eric Helms (3DMJ)', domain: 'foundations', level: [1,2,3], depth: ['high'], style: ['long_form','reading'], why: 'Co-founder of 3DMJ, co-author of MASS Research Review, published researcher, natural bodybuilding competitor. The most academically grounded training and nutrition education for natural lifters.', link: 'directory.html#exercise-selection' },
-        henselmans: { name: 'Menno Henselmans', domain: 'programming', level: [2,3], depth: ['high'], style: ['long_form','reading'], why: 'Published researcher and online coach who challenges conventional volume and frequency prescriptions with meta-analytical data. No hype — just data.', link: 'directory.html#deep-science' },
-        mcmahon: { name: 'MuscleMechanicsLab', domain: 'biomechanics', level: [3], depth: ['high'], style: ['long_form','reading'], why: 'Dr. Gerard McMahon, PhD in neuro-muscle-tendon adaptations to resistance training. Published researcher who actively corrects misapplied motor-unit and neural-control claims from other creators.', link: 'directory.html#deep-science' },
-        trexler: { name: 'Eric Trexler', domain: 'nutrition', level: [1,2,3], depth: ['high'], style: ['long_form','reading'], why: 'PhD in Human Movement Science from UNC Chapel Hill. Published on energy availability and metabolic adaptation. Co-hosts the Stronger By Science podcast with Nuckols.', link: 'directory.html#wellness' },
-        norton: { name: 'Layne Norton', domain: 'nutrition', level: [1,2,3], depth: ['high'], style: ['long_form','mixed'], why: 'PhD in Nutritional Sciences (University of Illinois), published research on protein metabolism and leucine. Pro natural bodybuilder and powerlifter. Strong science, combative delivery — separate the two.', link: 'directory.html#wellness' },
-        samudio: { name: 'Juan Samudio', domain: 'execution', level: [1,2], depth: ['medium'], style: ['short_form','mixed'], why: 'MS in Biomedical Engineering. Maps moment arms and resistance curves for lower-body movements with anatomical overlays. Hyper-specialized in glute biomechanics.', link: 'directory.html#deep-science' },
-        dxklan: { name: 'Dxklan', domain: 'programming', level: [1,2], depth: ['medium'], style: ['short_form','mixed'], why: 'Deklan McMichael, BSc Exercise Science. Bridges powerlifting and aesthetics — diagnoses plateaus through execution fixes, sleep, and fatigue management.', link: 'directory.html#exercise-selection' },
-        bankston: { name: 'Trell Bankston', domain: 'programming', level: [1,2], depth: ['medium'], style: ['short_form','mixed'], why: 'Natural bodybuilder who follows the Jordan Peters (TBJP) intensity-first philosophy — fewer sets, maximum effort per set. The counterpoint to volume-heavy programming.', link: 'directory.html#exercise-selection' }
+        nippard: {
+          name: 'Jeff Nippard', domain: 'foundations', level: [0,1,2], depth: ['low','medium'], style: ['long_form','mixed'],
+          why: 'BSc Biochemistry, natural pro bodybuilder. The single best starting point for evidence-based lifting — polished YouTube video essays with on-screen study citations.',
+          link: 'directory.html#fundamentals',
+          start: { url: 'https://www.youtube.com/@JeffNippard', label: 'YouTube channel — start from his beginner or fundamentals playlists' },
+          tips: {
+            programming: 'His programming videos cover volume, frequency, and split design with study citations on screen. Start with any video titled around your current split.',
+            execution: 'His exercise tier-list videos rank movements by evidence and show proper form with anatomical overlays.',
+            nutrition: 'He has dedicated videos on protein intake, cutting, and bulking backed by cited studies.',
+            recovery: 'Look for his videos on deloads and training frequency — he covers when to pull back and why.',
+            none: 'Browse his channel from the top. Almost everything is structured like a mini-course with research citations.'
+          }
+        },
+        tnf: {
+          name: 'Joel Twinem (TNF)', domain: 'programming', level: [1,2], depth: ['medium','high'], style: ['short_form','long_form','mixed'],
+          why: 'Fitness coach who cuts through optimization theater. His framework: standardize technique, take hard sets near failure, let progressive overload do the work. Calibrated for natural lifters.',
+          link: 'directory.html#fundamentals',
+          start: { url: 'https://www.youtube.com/@RealTNF', label: 'YouTube channel — his content-review and rebuttal videos are the sharpest entry point' },
+          tips: {
+            programming: 'His volume-follows-frequency framework directly addresses the "how many sets?" question. Start with his programming breakdowns.',
+            execution: 'Watch his technique standardization content — he argues that consistent form matters more than "optimal" form.',
+            nutrition: 'He covers natural-lifter nutrition expectations and debunks aggressive bulking advice.',
+            recovery: 'He is particularly strong on calibrating expectations — his content on what natural lifters should actually expect helps reframe fatigue and progress.',
+            none: 'His rebuttal videos on TikTok and YouTube are where he\'s sharpest. Watch any that cover a topic you\'re curious about.'
+          }
+        },
+        bennett: {
+          name: 'Joe Bennett', domain: 'execution', level: [2,3], depth: ['medium'], style: ['long_form','mixed'],
+          why: 'Coaches IFBB pros on exercise execution. Fixes the "this doesn\'t feel right" problem by putting muscles in the correct leverage position before you initiate failure.',
+          link: 'directory.html#exercise-selection',
+          start: { url: 'https://www.instagram.com/hypertrophycoach/', label: 'Instagram — short exercise-setup demos with pro clients' },
+          tips: {
+            execution: 'His Instagram is a library of exercise setup cues filmed with IFBB pros. Find the muscle group you\'re struggling with and watch how he positions the joint before the rep starts.',
+            programming: 'He\'s not a programming guy — but his execution fixes will make every set in your program more productive.',
+            none: 'Start on his Instagram. Each post is a quick setup correction for a specific exercise.'
+          }
+        },
+        kassem: {
+          name: 'Kassem Hanson', domain: 'biomechanics', level: [2,3], depth: ['high'], style: ['long_form','reading'],
+          why: 'Founded N1 Education. Teaches individualized exercise selection based on your skeletal anatomy — joint-angle analysis and exercise mapping. Primary audience is coaches.',
+          link: 'directory.html#deep-science',
+          start: { url: 'https://www.youtube.com/watch?v=LrL5dhKIK54', label: 'Watch: Biomechanics discussion with Joe Bennett on YouTube' },
+          tips: {
+            execution: 'The Bennett x Hanson conversation on YouTube is the best entry — two execution-first coaches debating how to match exercises to individual anatomy.',
+            programming: 'His N1 Education courses go deep on periodization mapped to individual recovery capacity. The YouTube discussion linked above is the free preview.',
+            none: 'Start with the Joe Bennett biomechanics discussion on YouTube, then explore N1 Education if you want the full framework.'
+          }
+        },
+        snitch: {
+          name: 'Scientific Snitch', domain: 'nutrition', level: [0,1], depth: ['low','medium'], style: ['short_form','mixed'],
+          why: 'Ella Parungao. Screen-shares PubMed studies to break down protein, energy balance, and why aggressive bulking backfires for natural lifters. No sponsor pitches.',
+          link: 'directory.html#wellness',
+          start: { url: 'https://www.instagram.com/scientificsnitch/', label: 'Instagram — PubMed screen-shares on nutrition basics' },
+          tips: {
+            nutrition: 'Her Instagram is the fastest way to learn energy balance. She screen-shares the actual studies and explains them in under 60 seconds.',
+            none: 'Start on her Instagram. Short-form clips that screen-share PubMed studies on protein, bulking, and energy balance.'
+          }
+        },
+        jewett: {
+          name: 'John Jewett', domain: 'nutrition', level: [2,3], depth: ['high'], style: ['long_form','reading'],
+          why: 'IFBB Pro bodybuilder who is also a Registered Dietitian with an MS in Nutrition. Contest prep with actual clinical credentials behind it.',
+          link: 'directory.html#wellness',
+          start: { url: 'https://www.youtube.com/@JohnJewett', label: 'YouTube — contest prep and nutrition periodization' },
+          tips: {
+            nutrition: 'His YouTube covers nutrition periodization across training phases. Start with any video on contest prep nutrition or cutting — his RD credential means the advice is clinically grounded.',
+            none: 'Browse his YouTube channel. His content bridges clinical dietetics with competitive bodybuilding — rare combination.'
+          }
+        },
+        malloy: {
+          name: 'Keenan Malloy', domain: 'programming', level: [0,1], depth: ['low','medium'], style: ['short_form','mixed'],
+          why: 'Hypertrophy coach and Tracked app co-founder. Teaches full-body and FBEOD programming so you stop overthinking split selection.',
+          link: 'directory.html#deep-science',
+          start: { url: 'https://www.instagram.com/keenanrmalloy/', label: 'Instagram — full-body and FBEOD programming content' },
+          tips: {
+            programming: 'His Instagram content on full-body and FBEOD (full body every other day) splits will end your split-selection paralysis. Pick one and run it.',
+            none: 'Start on Instagram. His content is built around giving beginners a repeatable program structure through the Tracked app.'
+          }
+        },
+        jewers: {
+          name: 'Ryan Jewers', domain: 'programming', level: [0,1,2], depth: ['medium'], style: ['short_form','mixed'],
+          why: 'BSc Kinesiology candidate, NSCA-CPT. Teaches volume, frequency, and split design with anatomical overlays and machine demos.',
+          link: 'directory.html#fundamentals',
+          start: { url: 'https://www.instagram.com/ryjewers/', label: 'Instagram — programming literacy with anatomical overlays' },
+          tips: {
+            programming: 'His short-form content with anatomical overlays teaches you how to structure volume and frequency across a split. The visual format makes programming click.',
+            execution: 'He demos plate-loaded machines with strict biomechanical alignment — good reference for stabilized exercises.',
+            none: 'Start on Instagram. His anatomical overlay style makes split design and exercise selection visually clear.'
+          }
+        },
+        milo: {
+          name: 'Milo Wolf, PhD', domain: 'biomechanics', level: [2,3], depth: ['high'], style: ['long_form','reading'],
+          why: 'PhD in sport science focused on partial vs. full ROM hypertrophy. Active researcher — publishes the papers, not just summarizes them.',
+          link: 'directory.html#deep-science',
+          start: { url: 'https://www.youtube.com/@WolfCoaching', label: 'YouTube — long-form research summaries on ROM and lengthened partials' },
+          tips: {
+            execution: 'His YouTube videos break down which exercises benefit from lengthened partials vs. full ROM — directly applicable to your exercise selection.',
+            programming: 'His research on ROM has programming implications for set design and exercise ordering. Start with any video on lengthened partials.',
+            none: 'His YouTube channel has long-form research summaries. Start with any video on ROM or lengthened partials — that\'s his primary research focus.'
+          }
+        },
+        carter: {
+          name: 'Paul Carter', domain: 'programming', level: [2,3], depth: ['medium','high'], style: ['long_form','reading'],
+          why: 'Veteran coach who argues for 1–3 hard sets per muscle taken to true failure. The credible counterpoint to high-volume orthodoxy.',
+          link: 'directory.html#fundamentals',
+          start: { url: 'https://www.instagram.com/liftrunbang1/', label: 'Instagram — intensity-first training essays and simple workout templates' },
+          tips: {
+            programming: 'His Instagram essays lay out the case for low-volume, high-intensity training. If you\'re doing 20+ sets and going nowhere, start here.',
+            recovery: 'His whole philosophy centers on doing less, recovering better, and training harder when you do show up. Directly addresses your fatigue problem.',
+            none: 'Start on Instagram. His long-form posts argue against volume orthodoxy with decades of coaching experience behind them.'
+          }
+        },
+        roman: {
+          name: 'Roman Mori', domain: 'sport', level: [1,2], depth: ['medium'], style: ['short_form','mixed'],
+          why: 'Former U.S. Army Ranger, BJJ brown belt. Programs heavy compound lifts for fighters. The weight room builds raw force — the mat provides instability training.',
+          link: 'directory.html#athletes',
+          start: { url: 'https://marketplace.trainheroic.com/brand/romanjiujitsu', label: 'TrainHeroic — his actual programs for combat athletes' },
+          tips: {
+            programming: 'His TrainHeroic programs are built for fighters — heavy compounds, no "functional" gimmicks. If you train BJJ or MMA, this is your programming answer.',
+            none: 'Start with his TrainHeroic programs. Short-form content is on Instagram (@romanjiujitsu) for the philosophy behind the programming.'
+          }
+        },
+        yanes: {
+          name: 'Ben Yanes', domain: 'execution', level: [1,2], depth: ['medium'], style: ['long_form','mixed'],
+          why: 'Whiteboard explanations and skeletal models to de-complicate resistance profiles and exercise selection. Practical biomechanics without jargon.',
+          link: 'directory.html#exercise-selection',
+          start: { url: 'https://www.youtube.com/watch?v=chKR8VTH2H4', label: 'Watch: "The Rise and Fall of Biomechanics in Bodybuilding" on YouTube' },
+          tips: {
+            execution: 'Start with "The Rise and Fall of Biomechanics" — it reframes how to think about exercise selection without drowning in jargon. Then browse his whiteboard breakdowns on specific muscle groups.',
+            programming: 'His biomechanics-for-coaches content helps you understand why certain exercises belong in your program and others don\'t.',
+            none: 'Watch "The Rise and Fall of Biomechanics in Bodybuilding" on YouTube first. It\'s his thesis on practical exercise selection.'
+          }
+        },
+        deltoids: {
+          name: 'King Deltoids', domain: 'execution', level: [1,2], depth: ['medium'], style: ['short_form'],
+          why: 'Evaluates delt exercises by torque profiles and fiber targeting — front, side, and rear — with stretch-biased, biomechanics-first selection.',
+          link: 'directory.html#exercise-selection',
+          start: { url: 'https://www.instagram.com/king_deltoids/', label: 'Instagram — delt exercise breakdowns by torque profile' },
+          tips: {
+            execution: 'His Instagram breaks down every delt exercise by which fibers it targets and why. If your shoulders aren\'t growing, scroll his feed for your specific weak point (front, side, or rear).',
+            none: 'Start on Instagram. He evaluates lateral raise variations, press angles, and rear delt work using torque-profile logic.'
+          }
+        },
+        diley: {
+          name: 'Davis Diley', domain: 'execution', level: [1,2], depth: ['low','medium'], style: ['short_form','long_form'],
+          why: 'Demos cable execution for chest, back, and arms. Advocates brief, intense sessions over junk volume. Has discussed PED use openly — factor that into recovery comparisons.',
+          link: 'directory.html#fundamentals',
+          start: { url: 'https://www.youtube.com/watch?v=tCqN0Ijicp0', label: 'Watch: "LESS IS MORE: Why Training Less is Actually Better" on YouTube' },
+          tips: {
+            execution: 'His "LESS IS MORE" video lays out why brief, intense sessions beat junk volume. Then check his Instagram for cable-specific execution cues on chest, back, and arms.',
+            recovery: 'Start with "LESS IS MORE" on YouTube — his whole philosophy is about training hard but recovering, which directly addresses your fatigue.',
+            none: 'Watch "LESS IS MORE" on YouTube first. It\'s his core philosophy in one video. Then his Instagram for cable execution demos.'
+          }
+        },
+        israetel: {
+          name: 'Mike Israetel (RP)', domain: 'programming', level: [1,2,3], depth: ['medium','high'], style: ['long_form','mixed'],
+          why: 'PhD in Sport Physiology, co-founder of Renaissance Periodization. Created the MEV/MAV/MRV volume-landmark model that dominates modern hypertrophy programming.',
+          link: 'directory.html#exercise-selection',
+          start: { url: 'https://www.youtube.com/@RenaissancePeriodization', label: 'RP YouTube — volume landmarks and muscle-group-specific programming' },
+          tips: {
+            programming: 'The RP YouTube channel has muscle-group-specific volume guides using the MEV/MAV/MRV framework. Find the muscle group you\'re struggling to grow and start there.',
+            execution: 'His exercise selection content ranks movements within the volume-landmark framework. Look for muscle-group-specific videos.',
+            none: 'Start on the RP YouTube channel. His volume-landmark videos (MEV/MAV/MRV per muscle group) are the most systematic approach to programming sets.'
+          }
+        },
+        nuckols: {
+          name: 'Greg Nuckols', domain: 'programming', level: [1,2,3], depth: ['high'], style: ['long_form','reading'],
+          why: 'Founded Stronger By Science, co-created MASS Research Review. The most rigorous long-form writing on strength and hypertrophy programming. Text-based — you read this, not watch it.',
+          link: 'directory.html#exercise-selection',
+          start: { url: 'https://www.strongerbyscience.com/', label: 'Read: Stronger By Science articles on training variables' },
+          tips: {
+            programming: 'The SBS website has deep articles on volume, frequency, and intensity. If you want to understand programming from first principles, start reading.',
+            none: 'Go to strongerbyscience.com and start with any training-related article. These are the most thorough evidence reviews in the space — long reads, not videos.'
+          }
+        },
+        helms: {
+          name: 'Eric Helms (3DMJ)', domain: 'foundations', level: [1,2,3], depth: ['high'], style: ['long_form','reading'],
+          why: 'Co-founder of 3DMJ, co-author of MASS Research Review, published researcher, natural bodybuilding competitor. The most academically grounded education for natural lifters.',
+          link: 'directory.html#exercise-selection',
+          start: { url: 'https://www.strongerbyscience.com/mass/', label: 'Read: MASS Research Review (monthly research digest he co-authors)' },
+          tips: {
+            programming: 'MASS Research Review (co-authored with Nuckols and Trexler) is a monthly digest of the latest training research. The highest signal-to-noise programming content available.',
+            nutrition: 'His natural bodybuilding nutrition and contest prep content is the gold standard. MASS covers nutrition research monthly.',
+            none: 'Start with MASS Research Review — a monthly research digest he co-authors. Also check his Instagram (@helms3dmj) for shorter takes.'
+          }
+        },
+        henselmans: {
+          name: 'Menno Henselmans', domain: 'programming', level: [2,3], depth: ['high'], style: ['long_form','reading'],
+          why: 'Published researcher and online coach who challenges conventional volume and frequency prescriptions with meta-analytical data. No hype — just data.',
+          link: 'directory.html#deep-science',
+          start: { url: 'https://mennohenselmans.com/', label: 'Read: mennohenselmans.com — research-based articles on training frequency and volume' },
+          tips: {
+            programming: 'His website has evidence reviews that challenge mainstream volume prescriptions. If you suspect you\'re doing too many sets, his data will either confirm or correct that.',
+            none: 'Start on his website. The articles on training frequency and volume are data-heavy and directly applicable to programming decisions.'
+          }
+        },
+        mcmahon: {
+          name: 'MuscleMechanicsLab', domain: 'biomechanics', level: [3], depth: ['high'], style: ['long_form','reading'],
+          why: 'Dr. Gerard McMahon, PhD in neuro-muscle-tendon adaptations. Published researcher who actively corrects misapplied motor-unit and neural-control claims from other creators.',
+          link: 'directory.html#deep-science',
+          start: { url: 'https://www.instagram.com/musclemechanicslab/', label: 'Instagram — academic-grade biomechanics breakdowns' },
+          tips: {
+            execution: 'His Instagram corrects common misunderstandings about motor-unit recruitment and mechanical tension. Dense but accurate if you have the vocabulary.',
+            none: 'Start on Instagram. His content requires foundational physiology vocabulary — if terms like "mechanical tension" and "motor-unit recruitment" are new, come back later.'
+          }
+        },
+        trexler: {
+          name: 'Eric Trexler', domain: 'nutrition', level: [1,2,3], depth: ['high'], style: ['long_form','reading'],
+          why: 'PhD in Human Movement Science (UNC Chapel Hill). Published on energy availability and metabolic adaptation. Co-hosts the SBS podcast with Nuckols.',
+          link: 'directory.html#wellness',
+          start: { url: 'https://www.strongerbyscience.com/podcast/', label: 'Listen: Stronger By Science podcast (co-hosted with Nuckols)' },
+          tips: {
+            nutrition: 'The SBS podcast episodes on energy availability and metabolic adaptation are directly relevant. He explains why cuts stall and what metabolic adaptation actually means from his published research.',
+            recovery: 'His research on energy availability directly explains why undereating tanks your training recovery. Start with the SBS podcast.',
+            none: 'Start with the Stronger By Science podcast. Trexler and Nuckols cover training and nutrition research in long-form conversation.'
+          }
+        },
+        norton: {
+          name: 'Layne Norton', domain: 'nutrition', level: [1,2,3], depth: ['high'], style: ['long_form','mixed'],
+          why: 'PhD in Nutritional Sciences (University of Illinois), published research on protein metabolism and leucine. Strong science, combative delivery — separate the two.',
+          link: 'directory.html#wellness',
+          start: { url: 'https://www.youtube.com/@biolayne', label: 'YouTube — protein science, flexible dieting, and nutrition myth-busting' },
+          tips: {
+            nutrition: 'His YouTube covers protein timing, leucine thresholds, and flexible dieting from his published research. Ignore the drama, focus on the science videos.',
+            none: 'Start on his YouTube channel. Filter for the research-focused videos on protein and flexible dieting — those are where his PhD actually shows.'
+          }
+        },
+        samudio: {
+          name: 'Juan Samudio', domain: 'execution', level: [1,2], depth: ['medium'], style: ['short_form','mixed'],
+          why: 'MS in Biomedical Engineering. Maps moment arms and resistance curves for lower-body movements with anatomical overlays. Hyper-specialized in glute biomechanics.',
+          link: 'directory.html#deep-science',
+          start: { url: 'https://www.instagram.com/juandsamudio/', label: 'Instagram — glute exercise breakdowns with engineering-grade overlays' },
+          tips: {
+            execution: 'His Instagram shows exactly which exercises bias upper vs. lower glute regions using moment-arm analysis. If your glutes are lagging, scroll his feed for your specific weak point.',
+            none: 'Start on Instagram. He maps resistance curves for glute exercises with anatomical overlays — hyper-specific, engineering-grade content.'
+          }
+        },
+        dxklan: {
+          name: 'Dxklan', domain: 'programming', level: [1,2], depth: ['medium'], style: ['short_form','mixed'],
+          why: 'Deklan McMichael, BSc Exercise Science. Bridges powerlifting and aesthetics — diagnoses plateaus through execution fixes, sleep, and fatigue management.',
+          link: 'directory.html#exercise-selection',
+          start: { url: 'https://www.instagram.com/dxklan/', label: 'Instagram — plateau diagnosis and powerbuilding content' },
+          tips: {
+            programming: 'His Instagram content diagnoses why your lifts have stalled — usually execution, sleep, or fatigue management. Practical fixes, not theory.',
+            recovery: 'He emphasizes sleep and fatigue management as the primary reasons lifters plateau. Directly relevant to your recovery issues.',
+            none: 'Start on Instagram. His content diagnoses plateaus through simple fixes — form breakdowns, sleep, and training load management.'
+          }
+        },
+        bankston: {
+          name: 'Trell Bankston', domain: 'programming', level: [1,2], depth: ['medium'], style: ['short_form','mixed'],
+          why: 'Natural bodybuilder following the Jordan Peters (TBJP) intensity-first philosophy — fewer sets, maximum effort per set. The counterpoint to volume-heavy programming.',
+          link: 'directory.html#exercise-selection',
+          start: { url: 'https://www.instagram.com/trellbankston/', label: 'Instagram — intensity-first natural bodybuilding training' },
+          tips: {
+            programming: 'His Instagram shows what low-volume, high-effort natural bodybuilding actually looks like in practice. If you\'re burnt out on high-volume programming, this is the alternative.',
+            recovery: 'His intensity-first approach means fewer total sets — which directly reduces the recovery demand you\'re struggling with.',
+            none: 'Start on Instagram. He trains TBJP-style — fewer sets, maximum effort — and shows how it works for a natural lifter.'
+          }
+        }
       };
 
       var primaryDomain = 'foundations';
@@ -346,10 +580,21 @@
         'Matched for <strong>' + styleLabels[style] + '</strong> content at <strong>' + depth + ' depth</strong>.';
 
       document.getElementById('result-creators').innerHTML = top3.map(function(c, i) {
+        var tip = '';
+        if (c.tips) {
+          tip = c.tips[bottleneck] || c.tips['none'] || '';
+        }
+        var startHtml = '';
+        if (c.start) {
+          startHtml = '<a href="' + c.start.url + '" target="_blank" rel="noreferrer" class="where-to-start" style="margin-top:12px;">Start here → ' + c.start.label + '</a>';
+        }
+        var tipHtml = tip ? '<p style="margin-top:10px;padding:10px 14px;background:#f0f8f3;border-left:3px solid var(--green);border-radius:4px;font-size:0.9rem;color:var(--ink);"><strong>For your situation:</strong> ' + tip + '</p>' : '';
         return '<div class="creator-rec">' +
-          '<p class="rec-reason">Pick ' + (i + 1) + ' — Why them?</p>' +
+          '<p class="rec-reason">Pick ' + (i + 1) + '</p>' +
           '<h4><a href="' + c.link + '" style="color:var(--green-dark);text-decoration:underline;">' + c.name + '</a></h4>' +
           '<p>' + c.why + '</p>' +
+          tipHtml +
+          startHtml +
           '</div>';
       }).join('');
 
