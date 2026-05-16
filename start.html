@@ -134,11 +134,11 @@
           <p id="result-summary" style="color:var(--muted);max-width:640px;margin:12px 0 28px;"></p>
         </div>
 
-        <div class="rtf-callout" style="border-color:var(--coral);background:#fdf5f3;">
+        <div class="rtf-callout" style="border-color:var(--coral);background:rgba(248,113,113,0.10);">
           <h2 style="color:var(--coral);">Reality check</h2>
-          <p style="margin:0 0 10px;color:var(--ink);font-weight:600;">Before you watch a single video, get these four things right. Everything else is noise.</p>
+          <p style="margin:0 0 10px;color:var(--heading);font-weight:600;">Before you watch a single video, get these four things right. Everything else is noise.</p>
           <ul>
-            <li><strong>Train each muscle 2× per week.</strong> Take most sets within a few reps of failure. That's the growth signal.</li>
+            <li><strong>Train each muscle 2× per week.</strong> Take most sets within a few reps of <span class="gloss" data-term="failure">failure</span>. That's the growth signal.</li>
             <li><strong>Eat 1.6–2.2 g protein per kg bodyweight.</strong> Hit that daily. The rest of your diet matters less than you think.</li>
             <li><strong>Sleep 7–9 hours.</strong> This is where you actually grow. No creator can fix bad sleep.</li>
             <li><strong>Stay consistent for months, not weeks.</strong> Swapping programs every 3 weeks is the #1 way to spin your wheels.</li>
@@ -588,7 +588,7 @@
         if (c.start) {
           startHtml = '<a href="' + c.start.url + '" target="_blank" rel="noreferrer" class="where-to-start" style="margin-top:12px;">Start here → ' + c.start.label + '</a>';
         }
-        var tipHtml = tip ? '<p style="margin-top:10px;padding:10px 14px;background:#f0f8f3;border-left:3px solid var(--green);border-radius:4px;font-size:0.9rem;color:var(--ink);"><strong>For your situation:</strong> ' + tip + '</p>' : '';
+        var tipHtml = tip ? '<p style="margin-top:10px;padding:10px 14px;background:rgba(52,211,153,0.10);border-left:3px solid var(--green);border-radius:4px;font-size:0.9rem;color:var(--ink);"><strong>For your situation:</strong> ' + tip + '</p>' : '';
         return '<div class="creator-rec">' +
           '<p class="rec-reason">Pick ' + (i + 1) + '</p>' +
           '<h4><a href="' + c.link + '" style="color:var(--green-dark);text-decoration:underline;">' + c.name + '</a></h4>' +
@@ -641,5 +641,6 @@
     }
   })();
   </script>
+  <script src="tooltips.js" defer></script>
 </body>
 </html>
